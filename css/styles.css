@@ -543,6 +543,10 @@ body {
         width: 100%;
     }
 
+    .advantages-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+
     .advantage-title {
         font-weight: 700;
         font-size: 36px;
@@ -553,7 +557,10 @@ body {
 
     .advantage-description {
         font-weight: 500;
-        margin-bottom: 72px;
+    }
+
+    .advantages-section {
+        margin-bottom: 96px;
     }
 }
 
@@ -571,6 +578,12 @@ body {
     width: calc((100% - 48px) / 3);
 }
 
+@media screen and (max-width: 768px) {
+    .doing-section {
+        display: none;
+    }
+}
+
 
 /* ========================== OUR TEAM SECTION ========================== */
 
@@ -580,7 +593,7 @@ body {
 
 .employeers {
     display: flex;
-    gap: 24px;
+    column-gap: 24px;
 }
 
 .character-box {
@@ -644,6 +657,17 @@ body {
     gap: 16px;
 }
 
+@media screen and (max-width: 768px) {
+    .employeers {
+        align-items: center;
+        flex-direction: column;
+        row-gap: 72px;
+    }
+
+    .character-box {
+        width: 264px;
+    }
+}
 
 
 /* ========================== CUSTOMERS SECTION ========================== */
