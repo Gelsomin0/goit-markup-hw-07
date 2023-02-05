@@ -76,10 +76,17 @@ body {
 }
 
 
-/* .section {
+.section {
     padding-top: 120px;
     padding-bottom: 120px;
-} */
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
 
 .section-title {
     font-weight: 700;
@@ -520,7 +527,37 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--slate);
 }
+
+@media screen and (max-width: 768px) {
+    .advantage-icon {
+        display: none;
+    }
+
+    .advantages {
+        flex-direction: column;
+    }
+
+    .advantages-item {
+        width: 100%;
+    }
+
+    .advantage-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .advantage-description {
+        font-weight: 500;
+        margin-bottom: 72px;
+    }
+}
+
+
 
 
 /* ========================== WHAT ARE WE DOING SECTION ========================== */
