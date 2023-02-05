@@ -416,10 +416,26 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--navy-blue);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg.jpg');
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                        url('../images/hero-bg.jpg');
     background-position: center;
     background-size: cover;
 }
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                            url('../images/mobile-hero-bg.jpg');
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                            url('../images/mobile-hero-bg@2x.jpg');
+    }
+}
+
 .hero-title {
     width: 500px;
     font-weight: 700;
@@ -429,6 +445,15 @@ body {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 48px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-title {
+        width: 320px;
+        font-size: 36px;
+        line-height: 1.11;
+        text-transform: capitalize;
+    }
 }
 
 .order-btn {
