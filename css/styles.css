@@ -586,10 +586,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     justify-content: space-between;
 }
 
-/* .advantages-section {
-    padding-bottom: 0px;
-} */
-
 .advantages-section {
     padding-bottom: 96px;
 }
@@ -703,6 +699,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 @media screen and (min-width: 1200px) {
     .doing-section {
         display: flex;
+        padding-top: 0;
     }
 }
 
