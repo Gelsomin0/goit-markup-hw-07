@@ -403,6 +403,7 @@ body {
     .nav-bar {
         width: 100%;
         justify-content: space-between;
+        height: 24px;
     }
 }
 
@@ -507,6 +508,8 @@ body {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url('../images/tablet-hero-bg.jpg');
+        padding-bottom: 108px;
+        padding-top: 112px;
     }
 }
 
